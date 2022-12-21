@@ -18,10 +18,10 @@ object Main {
   // It's is assumed that the custom interval list starts also from current time, so it is necessary to provide 1 as first number
   val usage = """
     Usage:
-      $ java -jar orders.jar minimum-date maximum-date [list of intervals]
+      $ scala orders.jar minimum-date maximum-date [list of intervals]
     Examples:
-      $ java -jar orders.jar "2018-01-01 00:00:00" "2019-01-01 00:00:00"
-      $ java -jar orders.jar "2018-01-01 00:00:00" "2019-01-01 00:00:00" "1,3,7"
+      $ scala orders.jar "2018-01-01 00:00:00" "2019-01-01 00:00:00"
+      $ scala orders.jar "2018-01-01 00:00:00" "2019-01-01 00:00:00" "1,3,7"
     """
 
   val allProducts = Seeder.productSeeder(
